@@ -1,0 +1,60 @@
+@import "../config/mixin";
+@import "../config/variable";
+@import "../utilities/responsive";
+
+.service{
+    padding: 25px 0;
+    background: $light_gray;
+
+    &__setting{
+        @include flexright;
+        padding-right: 10px;
+
+        button{
+            border: none;
+            background: $white;
+
+            &:hover{
+                background: $nutty;
+            }
+        }   
+    }
+
+    &__component{
+        padding-top: 20px;
+        gap: 20px;
+
+        &_item{
+            padding-bottom: 40px;
+            &_icons{
+                @include flexcenter;
+                color: $meroon;
+                font-size: 20px;
+
+                &:hover{
+                    color:$deep_blue;
+                }
+            }
+
+            &_description{
+                padding: 7px 0;
+                @include flexcenter;
+                font-size: 14px;
+                opacity: 0.6;
+            }
+
+            &_name{
+                font-family: Roboto Mono;
+                font-size: 15px;
+                @include flexcenter;
+                text-transform: uppercase;
+                font-weight: 700;
+
+                &:hover{
+                    color:$meroon;
+                }
+            }
+
+        }    
+    }
+}

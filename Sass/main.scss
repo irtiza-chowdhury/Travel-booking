@@ -1,0 +1,23 @@
+@import "config/mixin";
+@import "config/reset";
+@import "config/variable";
+@import "config/layout";
+
+
+// other_area_scss
+@import "other/header";
+@import "other/service_area";
+@import "other/packages";
+@import "other/footer";
+
+
+// Utilities_scss
+@import "utilities/registration_form";
+
+
+// header_area
+.header{
+    background: url("../asset/img/Eiffel_Tower.jpg");
+    background-size: cover;
+}
+

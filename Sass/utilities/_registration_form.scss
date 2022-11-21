@@ -1,0 +1,262 @@
+@import "../config/variable";
+@import "../config/mixin";
+@import "../utilities/responsive";
+
+
+.header{
+    .header__registration{
+        padding-bottom: 50px;
+        padding-left: 80px;
+
+        @media (min-width: 500px) and (max-width: 667.98px) {
+            padding-left: 0 !important;
+        }
+        
+        &-option{
+            @include flexleft;
+            
+            // gap: 15px;
+            background-color: $black;
+            background-size: contain;
+            width: fit-content;
+            
+            &-component{
+                border-right: 1px solid $white;
+                padding: 0 5px;
+
+                button{
+                    text-decoration: none;
+                    border: none;
+                    background: none;
+                    // position: relative;
+                    a{
+                        text-decoration: none;
+                        color: $white;
+                        font-size: 12px;
+                        @include flexcenter;
+    
+                        span{
+                            margin-right: 3px;
+                            
+                            // #badge_red{
+                            //     position: absolute;
+                            //     left: 12px !important;
+                            //     top: 14px !important;
+                            // }
+                        }
+                    }
+                    
+                }
+                
+                
+                &:hover{
+                    background: $meroon;
+                }
+                &:last-child{
+                    border-right: none;
+                   
+                }
+            }
+        }
+
+        &-body{
+            background: $off_white;
+            width: fit-content;
+            padding: 20px;
+
+            @media (min-width: 500px) and (max-width: 669.98px) {
+                width: 100% !important;
+            }
+            
+            
+            &-heading{
+                @include flexbetweenwrap;
+                gap: 20px;
+                
+                
+                .title{
+                    
+                    font-family: Roboto Mono;
+                    h4{
+                        font-weight: 900;
+                        // font-size: 15px;
+                    }
+                    
+                }
+    
+                .flight{
+                    @include flexright;
+                    font-size: 13px;
+                    
+                    background: $black;
+                    color: $white;
+                    border-radius: 10px;
+
+                    button{
+                        text-decoration: none;
+                        background: none;
+                        border: none;
+                        color: $white;
+                        padding: 10px;
+                        border-radius: 10px;
+
+                        &:hover{
+                            background: $meroon;
+                        }
+                    }                   
+                }
+            }
+
+            &-destination{
+                @include flexleft;
+                gap: 50px;
+                margin: 20px 0;
+                font-size: 14px;
+
+                .travelling-from{
+                    display: flex;
+                    flex-direction: column;
+
+                    label{
+                        font-weight: 700;
+                        padding: 10px 0 10px 5px;
+                        
+                    }
+                    input{
+                        padding: 5px;
+                        border: 0.5px solid $black;
+                        border-radius: 10px;
+                    }
+
+                    
+                }
+                .travelling-to{
+                    @extend .travelling-from;
+                }
+            }
+
+            &-information{
+                @include flexleft;
+                gap: 15px;
+                font-size: 13px;
+                margin-bottom: 50px;
+
+                .personal-info{
+                    display: flex;
+                    flex-direction: column;
+
+                    label{
+                        font-weight: 700;
+                        font-size: 14px;
+                        padding: 10px 0 10px 5px;
+                    }
+                    input{
+                        padding: 5px;
+                        border: 0.5px solid $black;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            &-button{
+                @include flexleft;
+                gap: 150px;
+
+                button{
+                    text-decoration: none;
+                    background: $meroon;
+                    padding: 4px 10px;
+                    color: $white;
+                    border: none;
+                    border-radius: 10px;
+
+                    &:hover{
+                        background: $deep_blue;
+                    }
+                }
+
+                .advanced-search{
+
+                    button{
+                        font-style: italic;
+                        text-decoration: underline;
+                        font-family: auto;
+                        border: none;
+                        background: none;
+                        color: $meroon;
+                        font-weight: 700;
+
+                        &:hover{
+                            color: $black;
+                        }
+                    }
+                    
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .header{
+        padding-bottom: 70px;
+        .header__registration{
+            padding: 0 !important;
+
+            &-option{
+                width: 100%;
+                padding-left: 0 !important;
+                margin-left: 0;
+                flex-direction: column;
+
+                &-component{
+                    border-right: none;
+                    border-bottom: 1px solid $gray;
+                    border-radius: 10px;
+
+                    &:last-child{
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            &-body{
+                width: 100%;
+                padding-top: 30px ;
+
+                &-destination{
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .travelling-from{
+                        label{
+                            padding-bottom: 7px;
+                        }
+                    }
+                   
+                }
+                &-information{
+                    flex-direction: column;
+                }
+
+                &-button{
+                    gap: 60px;
+                    padding-bottom: 10px;
+                }
+            }
+            
+        }
+    }
+    
+}
+
+// @media (min-width: 500px) and (max-width: 617.98px){
+//     .header{
+//         .header__registration{
+//             padding-left: 5px;
+//             width: 100%;
+//         }
+//     }
+    
+// }

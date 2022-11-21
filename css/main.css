@@ -1,0 +1,478 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+body {
+  background: #7a7676 !important;
+}
+
+.full-body {
+  width: 95%;
+  margin: 20px auto;
+  background: #ffffff;
+}
+
+.header {
+  padding-top: 10px;
+  font-family: Roboto Mono;
+}
+.header .header__topnav {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  border-bottom: 0.1px solid #7a7676;
+}
+.header .header__topnav-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.header .header__topnav-info a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.header .header__topnav-info a:hover {
+  color: #850e0e;
+}
+@media (max-width: 767.98px) {
+  .header .header__topnav-info {
+    margin-bottom: 30px;
+  }
+}
+.header .header__topnav-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.header .header__topnav-icons i:hover {
+  color: #081a70;
+}
+.header .header__midnav {
+  margin-top: 20px;
+}
+.header .header__midnav-title {
+  text-transform: lowercase;
+  font-weight: 400;
+  font-family: Kanit;
+  border: none;
+  background: none;
+  color: #ffffff;
+  font-size: 20px;
+  padding-left: 20px;
+}
+.header .header__midnav-title:hover {
+  color: #081a70;
+}
+.header .header__midnav-links {
+  align-items: flex-end;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+.header .header__midnav-links li a {
+  color: #ffffff !important;
+  font-size: 13px;
+}
+.header .header__midnav-links li a:hover {
+  color: #ffdd99 !important;
+}
+.header__search {
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+}
+.header__search button {
+  border: none;
+}
+.header__search button:hover {
+  background: #f0ab8f;
+}
+
+.service {
+  padding: 25px 0;
+  background: #dfdfdf;
+}
+.service__setting {
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  padding-right: 10px;
+}
+.service__setting button {
+  border: none;
+  background: #ffffff;
+}
+.service__setting button:hover {
+  background: #ffdd99;
+}
+.service__component {
+  padding-top: 20px;
+  gap: 20px;
+}
+.service__component_item {
+  padding-bottom: 40px;
+}
+.service__component_item_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #850e0e;
+  font-size: 20px;
+}
+.service__component_item_icons:hover {
+  color: #081a70;
+}
+.service__component_item_description {
+  padding: 7px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  opacity: 0.6;
+}
+.service__component_item_name {
+  font-family: Roboto Mono;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.service__component_item_name:hover {
+  color: #850e0e;
+}
+
+.packages {
+  padding-top: 40px;
+}
+.packages__text-mood {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #850e0e;
+  font-style: italic;
+  font-family: emoji;
+  font-weight: 700;
+}
+.packages__text-tailor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: Roboto Mono;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.packages__sample {
+  padding-top: 20px;
+  margin-left: 10px;
+}
+@media (max-width: 629.98px) {
+  .packages__sample-items {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    align-content: stretch;
+  }
+}
+.packages__sample-items-picture {
+  position: relative;
+  width: 275px;
+  height: 200px;
+  padding-bottom: 20px;
+}
+.packages__sample-items-picture img {
+  width: 100%;
+  height: 100%;
+}
+.packages__sample-items-picture .title {
+  position: absolute;
+  top: 46%;
+  left: 28%;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: Roboto Mono;
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) and (max-width: 1299.98px) {
+  .packages__sample-items {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    align-content: stretch;
+  }
+  .packages__sample-items .title {
+    top: 40%;
+    left: 20%;
+  }
+}
+.footer__image {
+  height: 370px;
+}
+.footer__image img {
+  height: 100%;
+}
+.footer__items-title {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: Roboto Mono;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.footer__items-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 13px;
+}
+.footer__items-description-image {
+  height: 70px;
+  width: 70px;
+}
+.footer__items-description-image img {
+  height: 100%;
+  width: 100%;
+}
+.footer__items-description-duration .price {
+  font-size: 15px;
+  font-weight: 700;
+  color: #850e0e;
+}
+.footer__items-description-duration .value {
+  opacity: 0.7;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 530px) {
+  .footer .footer__image {
+    height: 250px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 991.98px) {
+  .samples {
+    padding-top: 30px;
+    display: flex;
+    align-items: left;
+  }
+}
+.header .header__registration {
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+@media (min-width: 500px) and (max-width: 667.98px) {
+  .header .header__registration {
+    padding-left: 0 !important;
+  }
+}
+.header .header__registration-option {
+  display: flex;
+  justify-content: left;
+  background-color: #000;
+  background-size: contain;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.header .header__registration-option-component {
+  border-right: 1px solid #ffffff;
+  padding: 0 5px;
+}
+.header .header__registration-option-component button {
+  text-decoration: none;
+  border: none;
+  background: none;
+}
+.header .header__registration-option-component button a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .header__registration-option-component button a span {
+  margin-right: 3px;
+}
+.header .header__registration-option-component:hover {
+  background: #850e0e;
+}
+.header .header__registration-option-component:last-child {
+  border-right: none;
+}
+.header .header__registration-body {
+  background: #fdfdd8;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px;
+}
+@media (min-width: 500px) and (max-width: 669.98px) {
+  .header .header__registration-body {
+    width: 100% !important;
+  }
+}
+.header .header__registration-body-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.header .header__registration-body-heading .title {
+  font-family: Roboto Mono;
+}
+.header .header__registration-body-heading .title h4 {
+  font-weight: 900;
+}
+.header .header__registration-body-heading .flight {
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  font-size: 13px;
+  background: #000;
+  color: #ffffff;
+  border-radius: 10px;
+}
+.header .header__registration-body-heading .flight button {
+  text-decoration: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.header .header__registration-body-heading .flight button:hover {
+  background: #850e0e;
+}
+.header .header__registration-body-destination {
+  display: flex;
+  justify-content: left;
+  gap: 50px;
+  margin: 20px 0;
+  font-size: 14px;
+}
+.header .header__registration-body-destination .travelling-from, .header .header__registration-body-destination .travelling-to {
+  display: flex;
+  flex-direction: column;
+}
+.header .header__registration-body-destination .travelling-from label, .header .header__registration-body-destination .travelling-to label {
+  font-weight: 700;
+  padding: 10px 0 10px 5px;
+}
+.header .header__registration-body-destination .travelling-from input, .header .header__registration-body-destination .travelling-to input {
+  padding: 5px;
+  border: 0.5px solid #000;
+  border-radius: 10px;
+}
+.header .header__registration-body-information {
+  display: flex;
+  justify-content: left;
+  gap: 15px;
+  font-size: 13px;
+  margin-bottom: 50px;
+}
+.header .header__registration-body-information .personal-info {
+  display: flex;
+  flex-direction: column;
+}
+.header .header__registration-body-information .personal-info label {
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 0 10px 5px;
+}
+.header .header__registration-body-information .personal-info input {
+  padding: 5px;
+  border: 0.5px solid #000;
+  border-radius: 10px;
+}
+.header .header__registration-body-button {
+  display: flex;
+  justify-content: left;
+  gap: 150px;
+}
+.header .header__registration-body-button button {
+  text-decoration: none;
+  background: #850e0e;
+  padding: 4px 10px;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+}
+.header .header__registration-body-button button:hover {
+  background: #081a70;
+}
+.header .header__registration-body-button .advanced-search button {
+  font-style: italic;
+  text-decoration: underline;
+  font-family: auto;
+  border: none;
+  background: none;
+  color: #850e0e;
+  font-weight: 700;
+}
+.header .header__registration-body-button .advanced-search button:hover {
+  color: #000;
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    padding-bottom: 70px;
+  }
+  .header .header__registration {
+    padding: 0 !important;
+  }
+  .header .header__registration-option {
+    width: 100%;
+    padding-left: 0 !important;
+    margin-left: 0;
+    flex-direction: column;
+  }
+  .header .header__registration-option-component {
+    border-right: none;
+    border-bottom: 1px solid #7a7676;
+    border-radius: 10px;
+  }
+  .header .header__registration-option-component:last-child {
+    border-bottom: none;
+  }
+  .header .header__registration-body {
+    width: 100%;
+    padding-top: 30px;
+  }
+  .header .header__registration-body-destination {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .header .header__registration-body-destination .travelling-from label, .header .header__registration-body-destination .travelling-to label {
+    padding-bottom: 7px;
+  }
+  .header .header__registration-body-information {
+    flex-direction: column;
+  }
+  .header .header__registration-body-button {
+    gap: 60px;
+    padding-bottom: 10px;
+  }
+}
+.header {
+  background: url("../asset/img/Eiffel_Tower.jpg");
+  background-size: cover;
+}/*# sourceMappingURL=main.css.map */

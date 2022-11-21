@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Beginning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- font-awesome cdn -->
+    <script src="https://kit.fontawesome.com/3a8a85fbc3.js" crossorigin="anonymous"></script>
+
+   <!-- botstrap css -->
+   <link rel="stylesheet" href="asset/bt_css/bootstrap.min.css">
+
+   <!-- font_family roboto -->
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+
+   <!-- kanit font -->
+   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="full-body">
+        <!-- header_area -->
+        <section class="header">
+            
+                <div class="header__topnav">
+                    <div class="contain">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="header__topnav-info">
+                                <a href="#">Home</a>
+                                <a href="#">About</a>
+                                <a href="#">Visit</a>
+                                <a href="#">Contact</a>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-5">
+                                <div class="header__topnav-icons">
+                                    <div><i class="fa-brands fa-facebook-square"></i></div>
+                                    <div><i class="fa-brands fa-twitter"></i></div>
+                                    <div><i class="fa-brands fa-whatsapp-square"></i></div>
+                                    <div><i class="fa-brands fa-google-drive"></i></div>     
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div> 
+                   
+                </div>
+                <div class="header__midnav">
+                    <nav class="navbar navbar-expand-lg bg-none">
+                        <div class="container-fluid">
+                          <a class="navbar-brand header__midnav-title" href="#">Canvas</a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 header__midnav-links">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house-user"></i> Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-plane"></i> Flights</a></a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-suitcase-rolling"></i> Holidays</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-hotel"></i> Hotels</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-pen"></i> Blogs</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-phone"></i> +2120340424</a>
+                              </li>
+                            </ul>
+                            
+                          </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="header__search"><button><i class="fa-solid fa-gears"></i></button> </div>
+                <div class="header__registration">
+                    <div class="container-fluid">
+                    
+                        <div class="container-fluid">
+                            <div class="header__registration-option">
+                                <div class="header__registration-option-component"> <button type="button"><a class="flight1" href="#"><span> <i class="fa-solid fa-plane"></i></span> Flight</a></button> </div>
+                                <div class="header__registration-option-component"> <button type="button"><a href="#"><span> <i class="fa-solid fa-hotel"></i></span> Hotel</a></button> </div>
+                                <div class="header__registration-option-component"> <button type="button" class="btn "><a href="#"> Flights + Hotels <span id="badgeRed" class="badge rounded-pill bg-danger">New</span></a></button> </div>
+                                <div class="header__registration-option-component"><button type="button"><a href="#"><span> <i class="fa-solid fa-suitcase-rolling"></i></span>Holidays</a></button> </div>
+                            </div>
+                            
+                        </div> 
+                        
+                    
+                        <div class="header__registration-body">
+                            <div class="header__registration-body-heading"> 
+                                <div class="title"><h4>Book Your Flight</h4></div>
+                                <div class="flight"> 
+                                    <Button type="button">Domestic </Button>
+                                    <Button type="button">International </Button>
+                                    
+                                </div>
+                            </div>
+                            <div class="header__registration-body-destination"> 
+                                <div class="travelling-from"> 
+                                    <label>From</label>
+                                    <input class="country" type="text" placeholder="Eg. Melbourne, Australia">
+                                </div>
+                                <div class="travelling-to">
+                                    <label for="">To</label>
+                                    <input class="country" type="text" placeholder="Eg. New York, United states">
+                                </div>
+                            </div>
+                            <div class="header__registration-body-information">
+                                <div class="personal-info">
+                                    <label for="">Departure</label>
+                                    <input class="date" type="date">
+                                </div>
+                                <div class="personal-info">
+                                    <label for="">Return</label>
+                                    <input class="date" type="date">
+                                </div>
+                                <div class="personal-info">
+                                    <label for="">Adults</label>
+                                    <input class="person-number" type="number">
+                                </div>
+                                
+                            </div>
+                            <div class="header__registration-body-button"> 
+                                <div> <button class="button" type="submit"> Search Flights</button></div> 
+                                <div class="advanced-search"> <button type="button">Advanced Search</button> </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+            
+                </div>
+        
+        
+        </section>
+        
+
+       <!-- Service_area    -->
+       <section class="service_area">
+            <div class="service">
+            
+                <div class="service__setting"> 
+                    <button type="button"><i class="fa-solid fa-gears"></i></button> 
+                </div>
+            
+            
+                <div class="service__component">
+                    <div class="container">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="service__component_item">
+                                        <div class="service__component_item_icons"> <i class="fa-solid fa-plane-departure"></i></div>
+                                        <div class="service__component_item_description"> Easy & cheap</div>
+                                        <div class="service__component_item_name">SEARCH FLIGHTS </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="service__component_item">
+                                        <div class="service__component_item_icons"><i class="fa-solid fa-key"></i></div>
+                                        <div class="service__component_item_description"> Over 1500+ places</div>
+                                        <div class="service__component_item_name">GET HOTEL DEALS </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="service__component_item">
+                                        <div class="service__component_item_icons"> <i class="fa-solid fa-gift"></i></div>
+                                        <div class="service__component_item_description"> Expprore Destination</div>
+                                        <div class="service__component_item_name">HOLIDAY PACKAGES </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="service__component_item">
+                                        <div class="service__component_item_icons"> <i class="fa-solid fa-headphones"></i></div>
+                                        <div class="service__component_item_description"> 24/7 dedicated hotline </div>
+                                        <div class="service__component_item_name"> 2200 222 2219</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            
+            </div>
+       </section>
+     
+       
+       <!-- package_area -->
+       <section class="package_area">
+        <div class="packages">
+            <div class="packages__text">
+                <div class="packages__text-mood"> What are you in the mood for?</div>
+                <div class="packages__text-tailor"> TAILOR MADE PACKAGES FOR YOU</div>
+            </div>
+
+            <div class="packages__sample">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="packages__sample-items">
+                                <div class="packages__sample-items-picture"> <img src="asset/img/camping.jpg" alt="">
+                                    <div class="title"> Forest camping</div>
+                                </div>                                
+                            </div>
+
+                            <div class="packages__sample-items">
+                                <div class="packages__sample-items-picture"><img src="asset/img/mountain.jpg" alt="">
+                                    <div class="title"> Mountain Madness</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="packages__sample-items">
+                                <div class="packages__sample-items-picture"><img src="asset/img/nature.jpg" alt="">
+                                    <div class="title"> Beautiful Nature</div>
+                                </div>
+                            </div>
+
+                            <div class="packages__sample-items">
+                                <div class="packages__sample-items-picture"><img src="asset/img/river_night.jpg" alt="">
+                                    <div class="title">River Rafting </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="packages__sample-items">
+                                <div class="packages__sample-items-picture"><img src="asset/img/beach_night.jpg" alt="">
+                                    <div class="title"> Beach Activity </div>
+                                </div>
+                            </div>
+                            <div class="packages__sample-items">
+                                    <div class="packages__sample-items-picture"><img src="asset/img/getways.jpg" alt="">
+                                    <div class="title">Romantic Getway</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="packages__sample-items">
+                                <div class="packages__sample-items-picture"><img src="asset/img/hill.jpg" alt="">
+                                    <div class="title">Hill Tracking</div>
+                                </div>
+                            </div>
+                            <div class="packages__sample-items">
+                                <div class="packages__sample-items-picture"> <img src="asset/img/to do list.jpg" alt="">
+                                    <div class="title">  Bucket list</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+
+
+       <!-- footer_area -->
+       <section class="footer_area">
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="footer__image">
+                            <img src="asset/img/europe.jpg" alt="">
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-6 samples">
+                        <div class="footer__items">
+                            <div class="footer__items-title"> Popular Destinations </div>
+                            <div class="footer__items-description">
+                                <div class="footer__items-description-image"> <img src="asset/img/eur1.jpg" alt=""></div>
+                                <div class="footer__items-description-duration">
+                                    <h3> 7 NIGHTS/ 8 DAYS</h3>
+                                    <div><span class="price">$599</span> <span class="value">canadians </span> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__items-description">
+                                <div class="footer__items-description-image"><img src="asset/img/thailand.jpg" alt=""> </div>
+                                <div class="footer__items-description-duration">
+                                    <h3> 4 NIGHTS/ 5 DAYS</h3>
+                                    <div><span class="price">$399</span> <span class="value">canadians </span> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__items-description">
+                                <div class="footer__items-description-image"> <img src="asset/img/newzeland.jpg" alt=""></div>
+                
+                                <div class="footer__items_description_duration">
+                                    <h3> 14 NIGHTS/ 15 DAYS</h3>
+                                    <div><span class="price">$1999</span> <span class="value">canadians </span> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__items-description">
+                                <div class="footer__items-description-image"><img src="asset/img/america.jpg" alt=""> </div>
+                                <div class="footer__items-description-duration">
+                                    <h3> 11 NIGHTS/ 12 DAYS</h3>
+                                    <div><span class="price">$1299</span> <span class="value">canadians </span> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+       </section>
+
+       
+    </div>
+   
+    <!-- bootstrap js -->
+    <script src="asset/bt_js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

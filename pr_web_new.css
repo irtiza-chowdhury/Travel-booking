@@ -1,0 +1,361 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+   background-color: darkgray; 
+}
+.header{
+
+    background: url(image/Eiffel_Tower.jpg) no-repeat;
+    background-position: cover;
+    margin: 5% 10% 0 10%;
+    width: 80%;
+    height: 500px;
+    justify-content: center;
+}
+
+.topnav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 0 auto;
+    font-size: 10px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid rgba(253, 251, 251, 0.2) ;
+}
+.topleft a{
+    text-decoration: none;
+    padding-right: 7px;
+    color: beige;
+    text-align: center;
+}
+.topright {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.topright i{
+    padding-left: 20px;
+    justify-content:center ;
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+    
+}
+.topnav .topleft a:hover{
+    border: 1px solid rgba(238, 232, 232, 0.3);
+}
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 10%;
+    margin-top: 2%;
+}
+.canvas{
+    margin-left: 15%;
+}
+button{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.midnav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 10px;
+    margin-right: 10%;
+}
+.midnav a{
+    text-decoration: none;
+    margin-right: 10px;
+    padding-right: 20px;
+    color: white;
+}
+.midnav i{
+    color: white;
+}
+.midnav a:hover{
+    border: 0.7px solid rgba(238, 232, 232, 0.3);
+}
+.search{
+    background: white;
+    display: flex;
+    justify-content:flex-end;
+    margin: 12px 0 0 93%;
+    width: 20px;
+    padding: 2px;
+}
+.container{
+    width: 45%;
+    height: auto;
+    overflow: hidden;
+    padding-top: 20px;
+    margin-left: 11%;
+}
+.regtop{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5Px 5px 0 5%;
+    color: white;
+    font-size: 12px;
+    background-color: black;
+    width: 63%;
+    justify-content: space-around;
+}
+/* .regtop a{
+    text-decoration: none;
+} */
+.regtop a{
+    text-decoration: none;
+    color: white;
+    border-right: 1px solid gray;
+    padding: 0 7px;
+    text-align: center;
+}
+.holiday a{
+    border-right: none;
+}
+.regtop i{
+    color: white;
+    padding-left: 2px;
+    text-align: center;
+}
+.regtop .hotel_flight{
+    padding-left: 10px;
+}
+.regtop .flight{
+    background-color: rgb(156, 65, 65);
+}
+.regtop .sale{
+    background-color: rgb(156, 65, 65);
+}
+.containerbody{
+    background-color: rgb(231, 226, 226);
+}
+.bookflight{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: 0 10%;
+    padding: 10px 0;
+}
+.bookflight .domint{
+    display: flex;
+}
+.bookflight .domestic{
+    background-color: rgb(156, 65, 65);
+    color: white;
+    padding: 3px;
+}
+.bookflight .international{
+    background-color: black;
+    color: white;
+    padding: 3px;
+}
+
+.destination{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 5px 5px;
+    flex-flow: inherit; 
+}
+.destination .inpdes{
+    width: 200px;
+    height: 40px;
+    border:1px solid none;
+}
+    
+.time{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    margin: 22px 8px;
+    font-weight: bold;
+    flex-flow: inherit;
+}
+.time .date{
+    width: 140px;
+    height: 30px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.time .number {
+    width: 60px;
+    height: 30px;
+    text-align: center;
+}
+.headbtm{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 30px;
+    font-weight: bold;
+}
+.headbtm .submit{
+    margin-bottom: 10px;
+    background-color: brown;
+}
+.headbtm .nam{
+    font-size: 13px;
+    font-style: italic;
+    color: brown;
+    text-decoration: underline 1px solid;
+}
+.upmid{
+    background-color: rgba(224, 216, 216, 0.952);
+    margin: 0 10%;
+    width: 80%;
+    height: 200px;
+}
+.settings{
+    display: flex;
+    justify-content:flex-end;
+    background-color: azure;
+    width: 30px;
+    margin-left: 92%;
+    height: fit-content;
+}
+.settings i {
+    padding: 10px 3px;
+}
+.upmid .upmidcon{
+display: flex;
+justify-content: space-between;
+margin: 10Px 15%;
+}
+.midpic{
+    color: rgb(199, 73, 73);
+}
+.midpar{
+    opacity: 0.7;
+    font-size: 13px;
+    font-style: italic;
+    margin: 2px 0;
+}
+.middia{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 3px 0;
+}
+.lowermid{
+    background-color: rgb(245, 247, 247);
+    height: 200px;
+    margin: 0 10%;
+    width: 80%;
+    padding: 60px;
+    text-align: center;
+}
+.lowermid .mood{
+    color: brown;
+    font-style: italic;
+    font-size: 15px;
+    padding: 8px 0;
+}
+.lowermid .tailor{
+    font-size: 25px;
+    font-weight: bold;
+}
+.pictures{
+    background-color: white;
+    width: 80%;
+    margin: 0 10%;
+   
+}
+.pic{
+    margin: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.pictures img{
+    width: 250Px;
+    height: 170px;
+    margin-left: 5px;
+    margin-top: 0;
+}
+.pictures .pic1{
+    position: relative;
+    z-index: 1;
+}
+.pictures .pic1tit{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 44%;
+    left: 28%;
+    color: white;
+    font-weight: bolder;
+    font-size: large;  
+}
+.bottom{
+width: 80%;
+margin-left: 10%;
+padding-top: 10px;
+background-color: white;
+margin-bottom: 27px;
+}
+.botcontain{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+    padding-bottom: 8px;
+}
+.botright{
+    width: 55%;
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+.botright img{
+    height: 450px;
+    width: 100%;
+}
+.botleft{
+    width: 43%;
+}
+.popdes{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.botleft .trav{
+    display: flex;
+    gap: 25px;
+}
+.botleft .travpic{
+    width: 35%;
+    left: 0;
+}
+.travpic img {
+    width: 100%;
+    height: 95px;
+}
+.trav .downleft .ops{
+    opacity: 0.7;
+}
+.trav .downleft .dollar{
+    color: rgb(218, 32, 32);
+}
+.header,
+.upmid,
+.lowermid,
+.pictures,
+.bottom{
+    box-shadow: 0px 1px 6px black;
+}
