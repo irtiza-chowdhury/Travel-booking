@@ -5,6 +5,22 @@
 .header{
     padding-top: 10px;
     font-family: Roboto Mono;
+    position: relative;
+    z-index: 1;
+    &__background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        z-index: -1;
+        &-image{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
     .header__topnav{
         color: $white;
         font-size: 12px;

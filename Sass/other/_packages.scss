@@ -15,12 +15,15 @@
         }
 
         &-tailor{
-            @include flexcenter;
+            // @include flexcenter;
             font-size: 20px;
             text-transform: uppercase;
             font-family: Roboto Mono;
             font-weight: 700;
             padding-bottom: 20px;
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
         }
     }
 
